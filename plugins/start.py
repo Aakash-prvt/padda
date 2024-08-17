@@ -94,25 +94,14 @@ async def start_command(client: Client, message: Message):
         # Schedule the file deletion
         asyncio.create_task(delete_files(madflix_msgs, client, k))
         
-        # for madflix_msg in madflix_msgs: 
-            # try:
-                # await madflix_msg.delete()
-                # await k.edit_text("Your Video / File Is Successfully Deleted ✅") 
-            # except:    
-                # pass 
 
         return
     else:
         reply_markup = InlineKeyboardMarkup(
             [
     [
-        InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ", url="https://t.me/Anime_Warior"),
-        InlineKeyboardButton("ʙᴏᴛs ᴄʜᴀɴɴᴇʟ", url="https://t.me/The_Bots_Wallah"),
-    ],
-    [
-                    InlineKeyboardButton("ᴏɴɢᴏɪɴɢ ᴀɴɪᴍᴇ", url = "https://t.me/ongoing_warior"),
-                    InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data = "about")
-        
+        InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ", url="https://t.me/Pleasure_Adda"),
+        InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data = "about"),
     ]
             ]
         )
